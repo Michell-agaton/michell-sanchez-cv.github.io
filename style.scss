@@ -1,0 +1,97 @@
+$backgd-color: aliceblue;
+$font-p: Arial, Helvetica, sans-serif;
+
+
+
+body{
+    margin: 0;
+    font-family: $font-p;
+    background-color: $backgd-color !important;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.nav-bar{
+    background-color: aqua;
+    
+}
+
+.carousel-caption{
+    color: black !important;
+    background-color: rgba(58, 58, 58, 0.41) !important;
+    font-weight: bold;
+}
+
+.visually-hidden{
+    color: black !important;
+}
+
+.titulo{
+    color: skyblue;
+    font-style: italic;
+    font-size: xx-large;
+    font-family: $font-p;
+    margin-bottom: 10px;
+}
+
+.subTitulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.foto{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px 90px 20px 90px ;
+}
+
+.presentacion{
+    background-color: backgd-color;
+    align-content: center;
+    text-align: center;
+
+}
+
+.proyectos{
+    background-color: azure;
+    padding: 12px;
+}
+
+@mixin img-acercade-border{
+    border-radius: 15px;
+}
+
+.img-acercade{
+    @include img-acercade-border;
+    
+}
+
+.tamanio{
+    @include img-acercade-border;
+    width: 100% !important;
+    max-height: 250px !important;
+    
+}
+
+.imgProyectos{
+    width: 450px;
+    height: 450px;
+    margin: 0;
+}
+
+.contacto{
+    background-color: rgb(240, 248, 255);
+    font-style: italic;
+    padding: 12px;
+    text-align: left;
+}
+
+.footer{
+    background-color: rgb(199, 113, 15);
+    font-weight: bold;
+    padding: 12px;
+
+}
